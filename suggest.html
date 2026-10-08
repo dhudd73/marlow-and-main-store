@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggest a Product | Marlow &amp; Main</title>
+<meta name="description" content="Suggest a product and help stock the shelves at Marlow & Main. Repeat requests move to the front of the review line.">
+<link rel="icon" href="assets/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="disclosure">Affiliate disclosure: some links on this site are affiliate links. If you buy through them, Marlow &amp; Main may earn a small commission at no extra cost to you. It never buys a better ranking here.</div>
+<header class="site"><div class="wrap nav">
+<a class="brand" href="index.html">Marlow &amp; Main</a>
+<nav>
+<a href="home-aisle.html">Home</a><a href="pet-aisle.html">Pet</a><a href="beauty-aisle.html">Beauty</a>
+<a href="how-we-choose.html">How We Choose</a><a href="suggest.html">Suggest a Product</a>
+</nav></div></header>
+<main class="wrap">
+
+<h1>Suggest a product — help stock the shelves</h1>
+<p>Tell us what to review next. We read every suggestion ourselves — no spam, no bought votes.</p>
+<div class="note"><strong>Our rule:</strong> when the same product or problem comes up again and again, it moves to the front of our review line. Reader requests shape what we test next.</div>
+
+<!-- INTEGRATION POINT (Formspree/Web3Forms): this form is a non-functional placeholder. Point its action at the Formspree or Web3Forms endpoint (or embed their code) and remove the disabled attributes to go live. Suggested fields are already named below. -->
+<form class="sample" action="#" method="post" aria-label="Suggest a product (placeholder)">
+<label for="sg-name">Your name (optional)</label>
+<input id="sg-name" name="name" type="text" disabled>
+<label for="sg-email">Your email (optional — only if you want a reply)</label>
+<input id="sg-email" name="email" type="email" disabled>
+<label for="sg-aisle">Aisle</label>
+<select id="sg-aisle" name="aisle" disabled>
+<option>Home</option><option>Pet</option><option>Pet Vitamins &amp; Supplements</option><option>Beauty</option>
+</select>
+<label for="sg-product">Product, or the problem you're trying to solve</label>
+<input id="sg-product" name="product_or_problem" type="text" disabled>
+<label for="sg-why">Why it matters to you</label>
+<textarea id="sg-why" name="why_it_matters" rows="4" disabled></textarea>
+<button class="btn" type="submit" disabled>Send suggestion (coming soon)</button>
+<p class="small">Placeholder form — the Suggestion Box opens when our form service is connected.</p>
+</form>
+
+<h2>Most requested right now</h2>
+<p class="small">Starter board — real requests will be tallied here once the box opens.</p>
+<table class="board">
+<tr><th>Product or problem</th><th>Aisle</th><th>Requests</th><th>Status</th></tr>
+<tr><td>Under-sink organizer that fits around plumbing</td><td>Home</td><td>—</td><td>Sample board entry</td></tr>
+<tr><td>Calming support for storm-nervous small dogs</td><td>Pet Vitamins &amp; Supplements</td><td>—</td><td>Sample board entry</td></tr>
+<tr><td>Fragrance-free moisturizer for sensitive skin</td><td>Beauty</td><td>—</td><td>Sample board entry</td></tr>
+</table>
+
+</main>
+<footer class="site"><div class="wrap">
+<p><strong>Marlow &amp; Main</strong> — Chosen well, for living well. Honest reviews for home, pet &amp; beauty.</p>
+<p>Affiliate disclosure: some links are affiliate links; we may earn a commission at no extra cost to you. Prices change at the merchant — always check the current price on the merchant's page.</p>
+<!-- INTEGRATION POINT (footer contact): hello@shopmarlowandmain.com is shown as the contact address, but email forwarding for this domain is NOT yet configured. Configure forwarding (Cloudflare/Porkbun) before presenting this as a working inbox. -->
+<p>Contact: hello@shopmarlowandmain.com &nbsp;|&nbsp; <a href="suggest.html">Suggestion Box</a> &nbsp;|&nbsp; <a href="how-we-choose.html">How We Choose</a></p>
+<p class="small">Sample/starter content is labeled as such until full reviews are published. &copy; 2026 Marlow &amp; Main, Hot Springs, Arkansas.</p>
+</div></footer>
+<script src="app.js" defer></script>
+</body></html>
